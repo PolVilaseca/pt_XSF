@@ -15,7 +15,8 @@ export OMP_STACKSIZE=2G
 
 
 #Run the program
-for size in `cat sizelist`
+#for size in `cat sizelist`
+for size in {6..48..2}
  do
 
 echo $size

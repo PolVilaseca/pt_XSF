@@ -172,7 +172,8 @@
         call Fermion_Propagator(l,nvec_2,S_Prop_0)
 	
 	!Construct the trace in the loop
-	do n1=0,l-1			
+	do n1=0,l-1	
+        do n2=n1,l-1		
 	do n3=n2,l-1  
 
 	qloop(1)=n1

@@ -20,7 +20,7 @@ obs_source= treelevel_4fermions.f90 treelevel_g1.f90 treelevel_gVt.f90 \
           oneloop_gX.f90 oneloop_gX_p.f90 oneloop_l1.f90 oneloop_lVt.f90 oneloop_lY.f90 
 
 f90comp = ifort
-switch = -O2 -openmp
+switch = -O2 -qopenmp
 #libs = -L$(LAPACK_LIB) -llapack -L$(BLAS_LIB) -lblas -lgfortran
 libs = -llapack -lblas
 

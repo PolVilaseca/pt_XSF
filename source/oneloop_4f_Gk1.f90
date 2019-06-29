@@ -56,10 +56,10 @@
 	!Tree level part
 	call Gk1_4f_0(l,g_i1,g_i2,flav,Gk14f_0)
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1  
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -113,10 +113,10 @@
 	call Gk1_4f_0(l,g_i1,g_i2,flav,Gk14f_0)
 
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1  
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -174,10 +174,10 @@
 	loop(:) = dcmplx(0.0d0,0.0d0)
 
 
-	!Construct the trace in the loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1  
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -257,10 +257,10 @@
 	loop(:) = dcmplx(0.0d0,0.0d0)
 
 
-	!Construct the trace in the loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1  
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -361,10 +361,10 @@
 	trace = dcmplx(0.0d0,0.0d0)
 	g_loop(:) = dcmplx(0.0d0,0.0d0)
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -481,10 +481,10 @@
 	g_loop(:) = dcmplx(0.0d0,0.0d0)
 
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -604,10 +604,10 @@
 	trace = dcmplx(0.0d0,0.0d0)
 
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -728,10 +728,10 @@
 	trace = dcmplx(0.0d0,0.0d0)
 
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -842,10 +842,10 @@
 	trace = dcmplx(0.0d0,0.0d0)
 
 
-	!Construct the gluon loop
-	do n1=0,l-1			!loop momenta. Optimizable
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -962,10 +962,10 @@
 	g_loop(:) = dcmplx(0.0d0,0.0d0)
 	trace = dcmplx(0.0d0,0.0d0)
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -1091,10 +1091,10 @@
 	g_loop(:) = dcmplx(0.0d0,0.0d0)
 	trace = dcmplx(0.0d0,0.0d0)
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -1221,10 +1221,10 @@
 	g_loop(:) = dcmplx(0.0d0,0.0d0)
 	trace = dcmplx(0.0d0,0.0d0)
 
-	!Construct the gluon loop
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -1384,9 +1384,10 @@
 !$OMP SCHEDULE(DYNAMIC,chunk) &
 !$OMP COLLAPSE(1)
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -1544,9 +1545,10 @@
 !$OMP COLLAPSE(1)
 
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -1701,9 +1703,10 @@
 !$OMP SCHEDULE(DYNAMIC,chunk) &
 !$OMP COLLAPSE(1)
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -1862,9 +1865,10 @@
 !$OMP SCHEDULE(DYNAMIC,chunk) &
 !$OMP COLLAPSE(1)
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -2024,9 +2028,10 @@
 !$OMP COLLAPSE(1)
 
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -2173,9 +2178,10 @@
 !$OMP COLLAPSE(1)
 
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -2324,9 +2330,10 @@
 !$OMP SCHEDULE(DYNAMIC,chunk) &
 !$OMP COLLAPSE(1)
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -2475,9 +2482,10 @@
 !$OMP COLLAPSE(1)
 
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -2625,9 +2633,10 @@
 !$OMP COLLAPSE(1)
 
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
@@ -2786,9 +2795,10 @@
 !$OMP COLLAPSE(1)
 
 
-	do n1=0,l-1			
-	do n2=n1,l-1
-	do n3=n2,l-1
+    !Construct the gluon loop
+    do n1=0,l-1
+    do n2=n_limit(mom_deg,n1),l-1
+    do n3=n_limit(mom_deg,n2),l-1
 
 	qloop(1)=n1
 	qloop(2)=n2
